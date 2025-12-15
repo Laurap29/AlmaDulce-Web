@@ -1,0 +1,26 @@
+ body {
+        background: linear-gradient(135deg, #fff5f8, #ffeaf1);
+        background-color: #fff8fb;
+      }
+      .card img {
+        height: 220px;
+        object-fit: cover;
+      }
+      header {
+        background-color: #684b59 !important;
+      }
+      .soft-pink-btn {
+        background-color: #684b59 !important;
+        border-color: #684b59 !important;
+        color: #ffffff !important;
+      }
+          .card {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+      }
+      .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }

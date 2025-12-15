@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registro usuarios</title>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/checkout/"
+    />
+    <script src="../js/color-modes.js"></script>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="theme-color" content="#712cf9" />
+    <link href="../css/checkout.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+  <body class="bg-body-tertiary">
+    <div class="container">
+      <main>
+        <div class="py-5 text-center">
+          <img
+            class="d-block mx-auto mb-4"
+            src="../img/registro.png"
+            alt="Logo de registro"
+            width="120"
+            height="120"
+          />
+
+          <h1 class="h2">Registro de Usuarios</h1>
+          <p class="lead">Completa los datos para crear una nueva cuenta.</p>
+        </div>
+        <div class="row g-5">
+          <div class="col-md-7 col-lg-8 mx-auto">
+            <h4 class="mb-3">Datos personales</h4>
+            <form class="needs-validation" novalidate id="formRegistroUsuario">
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="nombres" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombres" name="nombres" required />
+                  <div class="invalid-feedback">Nombre requerido.</div>
+                </div>
+                <div class="col-sm-6">
+                  <label for="apellidos" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="apellidos" name="apellidos" required />
+                  <div class="invalid-feedback">Apellido requerido.</div>
+                </div>
+                <div class="col-12">
+                  <label for="correo" class="form-label">Correo Electrónico</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="bi bi-envelope-at"></i></span>
+                    <input type="email" class="form-control" id="correo" name="correo" placeholder="lau@gmail.com" required />
+                    <div class="invalid-feedback">Correo requerido.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="rol" class="form-label">Rol del usuario</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="bi bi-person-badge"></i></span>
+                    <select class="form-select" id="rol" name="rol" required>
+                      <option value="">Elija una opción</option>
+                      <option value="usuario">Usuario</option>
+                      <option value="admin">Administrador</option>
+                    </select>
+                    <div class="invalid-feedback">El rol es requerido.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="direccion" class="form-label">Dirección</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="direccion"
+                    name="direccion"
+                    placeholder="Calle 98 #45-67"
+                    required
+                  />
+                  <div class="invalid-feedback">Dirección requerida.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="departamento" class="form-label">Departamento</label>
+                  <select class="form-select" id="departamento" name="departamento" required>
+                    <option value="">Elija una opción</option>
+                  </select>
+                  <div class="invalid-feedback">Seleccione un departamento válido.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="ciudad" class="form-label">Ciudad</label>
+                  <select class="form-select" id="ciudad" name="ciudad" required>
+                    <option value="">Elija una opción</option>
+                  </select>
+                  <div class="invalid-feedback">Seleccione una ciudad válida.</div>
+                </div>
+              </div>
+              <hr class="my-4" />
+              <h4 class="mb-3">Datos de ingreso</h4>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="username" class="form-label">Usuario de ingreso</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="bi bi-person-circle"></i></span>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      name="username"
+                      placeholder="lufe209"
+                      required
+                    />
+                    <div class="invalid-feedback">Usuario requerido.</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="password" class="form-label">Contraseña</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text"><i class="bi bi-key"></i></span>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      name="pass"
+                      placeholder="Contraseña"
+                      required
+                    />
+                    <div class="invalid-feedback">Contraseña requerida.</div>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4" />
+              <button id="btnRegistrar" class="w-100 btn btn-primary btn-lg soft-pink-btn" type="submit">
+                Registrarse
+              </button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+        <p class="mb-1">&copy; Copiright Alma Dulce 2019–2025</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacidad</a></li>
+          <li class="list-inline-item"><a href="#">T&C</a></li>
+          <li class="list-inline-item"><a href="#">Soporte</a></li>
+        </ul>
+      </footer>
+    </div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/checkout.js"></script>
+    <script src="../js/conexion_server/conn_depto_ciudad.js"></script>
+    <script src="../js/conexion_server/conn_user.js"></script>
+  </body>
+</html>
